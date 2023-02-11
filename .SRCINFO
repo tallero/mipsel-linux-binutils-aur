@@ -1,14 +1,17 @@
 pkgbase = mipsel-linux-binutils
 	pkgdesc = mipsel-linux binary manipulation programs
-	pkgver = 2.34
+	pkgver = 2.39
 	pkgrel = 1
-	url = https://www.gnu.org/software/binutils/
+	url = https://www.gnu.org/software/binutils
 	arch = x86_64
 	arch = i686
 	license = GPL
+	makedepends = libgmp-static
+	makedepends = gmp4-static
+	makedepends = mpfr-static
+	makedepends = libmpc-static
 	depends = glibc
-	source = ftp://ftp.gnu.org/gnu/binutils/binutils-2.34.tar.bz2
-	sha256sums = 89f010078b6cf69c23c27897d686055ab89b198dddf819efb0a4f2c38a0b36e6
+	source = ftp://ftp.gnu.org/gnu/binutils/binutils-2.39.tar.bz2
+	sha256sums = da24a84fef220102dd24042df06fdea851c2614a5377f86effa28f33b7b16148
 
 pkgname = mipsel-linux-binutils
-
